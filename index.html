@@ -15,6 +15,88 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For solo home inspectors: write the inspection report on site with your phone — systems, defects, photos — and deliver it the same day.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&amp;display=swap">
+<style>
+/* Variant "Impeccable distill": one column, one accent, one family, spacing instead of boxes. */
+:root{
+  --bg:#fbfaf7; --ink:#1d211f; --muted:#555c58; --line:#e3e1db; --control:#8b8880;
+  --accent:#2b5a4b; --accent-hover:#21473b; --accent-ink:#fbfaf7; --select:#d5e3dc;
+  --font:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --t-display:clamp(2.125rem,1.35rem + 3.2vw,3.25rem); --t-head:1.5rem; --t-body:1.0625rem; --t-small:.875rem;
+}
+html{color-scheme:light;scrollbar-color:#c9c6be var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--t-body)/1.65 var(--font);-webkit-font-smoothing:antialiased}
+::selection{background:var(--select);color:var(--ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.22em}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+
+header{position:static;background:var(--bg);border-bottom:1px solid var(--line);backdrop-filter:none}
+header .wrap{min-height:4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.logo{font-size:var(--t-body);font-weight:600;letter-spacing:0}
+.logo a{color:var(--ink);text-decoration:none}
+nav.top a{color:var(--muted);font-size:var(--t-small);line-height:1.4;margin-left:1.5rem;text-decoration:none}
+nav.top a:hover{color:var(--ink)}
+
+h1{font-size:var(--t-display);line-height:1.1;letter-spacing:-.025em;font-weight:600;margin:0 0 1.5rem;max-width:18ch;text-wrap:balance;color:var(--ink)}
+h2{font-size:var(--t-head);line-height:1.25;letter-spacing:-.01em;font-weight:600;margin:0 0 1.25rem;text-wrap:balance;color:var(--ink)}
+h3{font-size:var(--t-body);line-height:1.4;letter-spacing:0;font-weight:600;margin:0 0 .375rem}
+p{margin:0 0 1rem;max-width:66ch}
+.sub{font-size:var(--t-body);line-height:1.65;color:var(--muted);max-width:56ch;margin:0 0 2.5rem}
+
+.hero{padding:6rem 0 4.5rem}
+section{padding:4.5rem 0 0;border-top:0}
+.wrap > section:nth-of-type(even){background:none;box-shadow:none;clip-path:none}
+.wrap > section:last-child{padding-bottom:6rem}
+
+a.cta{display:inline-block;margin:0;padding:.875rem 1.75rem;border-radius:.375rem;background:var(--accent);color:var(--accent-ink);font:600 var(--t-body)/1.5 var(--font);text-decoration:none;transition:background-color .2s cubic-bezier(.16,1,.3,1)}
+a.cta:hover{background:var(--accent-hover);opacity:1}
+a.cta.quiet{padding:0;background:none;color:var(--accent);font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+a.cta.quiet:hover{background:none;color:var(--accent-hover)}
+.cta-note{margin:1rem 0 0;color:var(--muted);font-size:var(--t-small);line-height:1.5}
+
+.features{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--line)}
+.features li{display:grid;grid-template-columns:12.5rem 1fr auto;gap:.25rem 1.5rem;align-items:baseline;padding:1.25rem 0;border-top:1px solid var(--line)}
+.features b{font-weight:600}
+.features span{color:var(--muted)}
+a.more{font-size:var(--t-small);font-weight:500;white-space:nowrap;text-decoration:none}
+a.more:hover{text-decoration:underline}
+
+#example p{color:var(--muted);font-size:var(--t-body);line-height:1.65}
+#opis p{color:var(--ink)}
+#faq h3{margin-top:2rem}
+#faq h2 + h3{margin-top:0}
+#faq p{color:var(--muted);margin:0}
+
+.start-field label{display:block;margin:0 0 .5rem;font-weight:500}
+.start-row{display:flex;flex-wrap:wrap;gap:.75rem;align-items:stretch}
+select{font:400 var(--t-body)/1.5 var(--font);color:var(--ink);background:#fff;border:1px solid var(--control);border-radius:.375rem;padding:.8125rem 1rem;min-width:16rem;max-width:100%;accent-color:var(--accent)}
+select:focus{outline:none}
+select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+footer{background:transparent;color:var(--muted);border-top:1px solid var(--line);margin:0;padding:2rem 0 3rem;font-size:var(--t-small);line-height:1.5}
+footer p{margin:0}
+footer a{color:var(--accent)}
+footer .muted{color:var(--muted);margin:.5rem 0 0}
+
+@media (max-width:760px){
+  .hero{padding:3.5rem 0 3rem}
+  section{padding-top:3.5rem}
+  .wrap > section:last-child{padding-bottom:4rem}
+  h1{font-size:var(--t-display);letter-spacing:-.02em}
+  h2{font-size:1.375rem;letter-spacing:-.01em}
+  a.cta{display:block;text-align:center;margin:0}
+  a.cta.quiet{display:inline;text-align:left}
+  .features li{grid-template-columns:1fr;gap:.25rem}
+  .features li a.more{margin-top:.25rem}
+  select{min-width:0;width:100%}
+  .start-row{flex-direction:column}
+}
+@media (max-width:480px){ .wrap{padding:0 1rem} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important} }
+</style>
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -78,28 +160,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
+<main class="wrap">
   <div class="hero">
-    <h1>Write the home inspection report on site — and send it to your client the same day</h1>
-    <p class="sub">For solo home inspectors: walk the house with your phone, record each system, the defects and the photos as you go, and the report is assembled from your notes, ready to review and send to the buyer and the agent before the evening.</p>
+    <h1>Write the inspection report on site. Send it the same day.</h1>
+    <p class="sub">For solo home inspectors: walk the house with your phone and record each system, defect and photo as you go. The report is assembled from your notes, ready to review and send to the buyer and the agent before the evening.</p>
     <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
     <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
   </div>
 
   <section id="what" data-view="features_view">
     <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Report on site</b><span>Systems, observations and defects recorded on your phone during the walk-through.</span><br><a class="btn" href="price.html" data-ev="feature_onsite">I need this</a></div>
-      <div class="card"><b>Photos in place</b><span>Photos attached to the defect they show, with notes on each.</span><br><a class="btn" href="price.html" data-ev="feature_photos">I need this</a></div>
-      <div class="card"><b>Summary for the buyer</b><span>Safety issues and repairs pulled into a clear summary at the top.</span><br><a class="btn" href="price.html" data-ev="feature_summary">I need this</a></div>
-      <div class="card"><b>Same-day delivery</b><span>The finished report sent as a link and a PDF to the client and the agent.</span><br><a class="btn" href="price.html" data-ev="feature_delivery">I need this</a></div>
-    </div>
+    <ul class="features">
+      <li><b>Report on site</b><span>Systems, observations and defects recorded on your phone during the walk-through.</span><a class="more" href="price.html" data-ev="feature_onsite" aria-label="I need this: report on site">I need this</a></li>
+      <li><b>Photos in place</b><span>Photos attached to the defect they show, with notes on each.</span><a class="more" href="price.html" data-ev="feature_photos" aria-label="I need this: photos in place">I need this</a></li>
+      <li><b>Summary for the buyer</b><span>Safety issues and repairs pulled into a clear summary at the top.</span><a class="more" href="price.html" data-ev="feature_summary" aria-label="I need this: summary for the buyer">I need this</a></li>
+      <li><b>Same-day delivery</b><span>The finished report sent as a link and a PDF to the client and the agent.</span><a class="more" href="price.html" data-ev="feature_delivery" aria-label="I need this: same-day delivery">I need this</a></li>
+    </ul>
   </section>
 
   <section id="example" data-view="example_view">
     <h2>Example (fictional data)</h2>
-    <p class="fine">Solo inspector, three inspections on Saturday. At a 1980s ranch house he records the roof, the electrical panel, plumbing and HVAC as he walks, marks a double-tapped breaker and an aging water heater with photos, and at 6pm the buyer and the agent get the report with the summary of repairs at the top.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    <p>Solo inspector, three inspections on Saturday. At a 1980s ranch house he records the roof, the electrical panel, plumbing and HVAC as he walks, marks a double-tapped breaker and an aging water heater with photos, and at 6pm the buyer and the agent get the report with the summary of repairs at the top.</p>
+    <a class="cta quiet" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
   </section>
 <!-- seo-tekst:start -->
   <section id="opis">
@@ -131,10 +213,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- seo-tekst:end -->
   <section id="start" data-view="start_view">
     <h2>Set up your report</h2>
-    <p><label>Inspections per month<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 10</option><option>10–30</option><option>30–60</option><option>More than 60</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+    <div class="start-field">
+      <label for="volume">Inspections per month</label>
+      <div class="start-row">
+        <select id="volume" data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 10</option><option>10–30</option><option>30–60</option><option>More than 60</option></select>
+        <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+      </div>
+    </div>
   </section>
-</div>
+</main>
 
 <footer><div class="wrap">
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
