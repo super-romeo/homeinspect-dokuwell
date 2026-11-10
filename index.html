@@ -17,19 +17,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap">
 <style>
 /* Variant "Impeccable distill": one column, one accent, one family, spacing instead of boxes. */
 :root{
-  --bg:#fbfaf7; --ink:#1d211f; --muted:#555c58; --line:#e3e1db; --control:#8b8880;
-  --accent:#2b5a4b; --accent-hover:#21473b; --accent-ink:#fbfaf7; --select:#d5e3dc;
-  --font:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#fcfcfc; --ink:#05080b; --muted:#5c646f; --line:#dfe1e5; --control:#5c646f; --card:#ffffff;
+  --accent:#006acf; --accent-hover:#006acf; --accent-ink:#ffffff; --select:#d6efff; --focus:#0086dd;
+  --font:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   --t-display:clamp(2.125rem,1.35rem + 3.2vw,3.25rem); --t-head:1.5rem; --t-body:1.0625rem; --t-small:.875rem;
 }
-html{color-scheme:light;scrollbar-color:#c9c6be var(--bg);-webkit-text-size-adjust:100%}
+html{color-scheme:light;scrollbar-color:var(--line) var(--bg);-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--t-body)/1.65 var(--font);-webkit-font-smoothing:antialiased}
 ::selection{background:var(--select);color:var(--ink)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.22em}
 .wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
 
@@ -52,7 +52,7 @@ section{padding:4.5rem 0 0;border-top:0}
 .wrap > section:last-child{padding-bottom:6rem}
 
 a.cta{display:inline-block;margin:0;padding:.875rem 1.75rem;border-radius:.375rem;background:var(--accent);color:var(--accent-ink);font:600 var(--t-body)/1.5 var(--font);text-decoration:none;transition:background-color .2s cubic-bezier(.16,1,.3,1)}
-a.cta:hover{background:var(--accent-hover);opacity:1}
+a.cta:hover{background:var(--accent-hover);opacity:.9}
 a.cta.quiet{padding:0;background:none;color:var(--accent);font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
 a.cta.quiet:hover{background:none;color:var(--accent-hover)}
 .cta-note{margin:1rem 0 0;color:var(--muted);font-size:var(--t-small);line-height:1.5}
@@ -72,9 +72,9 @@ a.more:hover{text-decoration:underline}
 
 .start-field label{display:block;margin:0 0 .5rem;font-weight:500}
 .start-row{display:flex;flex-wrap:wrap;gap:.75rem;align-items:stretch}
-select{font:400 var(--t-body)/1.5 var(--font);color:var(--ink);background:#fff;border:1px solid var(--control);border-radius:.375rem;padding:.8125rem 1rem;min-width:16rem;max-width:100%;accent-color:var(--accent)}
+select{font:400 var(--t-body)/1.5 var(--font);color:var(--ink);background:var(--card);border:1px solid var(--control);border-radius:.375rem;padding:.8125rem 1rem;min-width:16rem;max-width:100%;accent-color:var(--accent)}
 select:focus{outline:none}
-select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 
 footer{background:transparent;color:var(--muted);border-top:1px solid var(--line);margin:0;padding:2rem 0 3rem;font-size:var(--t-small);line-height:1.5}
 footer p{margin:0}
