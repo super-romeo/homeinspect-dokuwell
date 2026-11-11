@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For solo home inspectors: write the inspection report on site with your phone — systems, defects, photos — and deliver it the same day.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Solo Inspector</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Solo Inspector</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Write the home inspection report on site — and send it to your client the same day</h1>
-    <p class="sub">For solo home inspectors: walk the house with your phone, record each system, the defects and the photos as you go, and the report is assembled from your notes, ready to review and send to the buyer and the agent before the evening.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For solo home inspectors</p>
+      <h1 class="rise" style="--i:1" data-len="long">Write the home inspection report on site&nbsp;<span class="soft">— and send it to your client the same day</span></h1>
+      <p class="rise" style="--i:2">For solo home inspectors: walk the house with your phone, record each system, the defects and the photos as you go, and the report is assembled from your notes, ready to review and send to the buyer and the agent before the evening.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="120" y="158" font-size="36" fill="#0a1524" font-weight="600">Solo Inspector</text><line x1="120" y1="204" x2="1080" y2="204" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="246" width="48" height="48" fill="#dfe8f7" rx="10" /><text x="188" y="280" font-size="30" fill="#0a1524">Report on site</text><rect x="120" y="358" width="48" height="48" fill="#dfe8f7" rx="10" /><text x="188" y="392" font-size="30" fill="#0a1524">Photos</text><rect x="120" y="470" width="48" height="48" fill="#dfe8f7" rx="10" /><text x="188" y="504" font-size="30" fill="#0a1524">Summary</text><rect x="730" y="250" width="340" height="410" fill="#dfe8f7" rx="20" /><text x="760" y="318" font-size="32" fill="#0a1524" font-weight="600">Same day</text><rect x="770" y="450" width="46" height="150" fill="#ffffff" rx="8" /><rect x="840" y="500" width="46" height="100" fill="#ffffff" rx="8" /><rect x="910" y="390" width="46" height="210" fill="#12397a" rx="8" /><rect x="980" y="520" width="46" height="80" fill="#ffffff" rx="8" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Solo home inspectors</dd></div>
+      <div><dt>Report</dt><dd>Home inspection report</dd></div>
+      <div><dt>Phone</dt><dd>On your phone</dd></div>
+      <div><dt>Service</dt><dd>Service in preparation</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Report on site</b><span>Systems, observations and defects recorded on your phone during the walk-through.</span><br><a class="btn" href="price.html" data-ev="feature_onsite">I need this</a></div>
-      <div class="card"><b>Photos in place</b><span>Photos attached to the defect they show, with notes on each.</span><br><a class="btn" href="price.html" data-ev="feature_photos">I need this</a></div>
-      <div class="card"><b>Summary for the buyer</b><span>Safety issues and repairs pulled into a clear summary at the top.</span><br><a class="btn" href="price.html" data-ev="feature_summary">I need this</a></div>
-      <div class="card"><b>Same-day delivery</b><span>The finished report sent as a link and a PDF to the client and the agent.</span><br><a class="btn" href="price.html" data-ev="feature_delivery">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="70" width="660" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="110" y="138" font-size="32" fill="#0a1524" font-weight="600">Report on site</text><rect x="110" y="196" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="120,218 128,228 144,208" fill="none" stroke="#12397a" stroke-width="4" /><text x="174" y="228" font-size="30" fill="#0a1524">defects</text><rect x="110" y="272" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="120,294 128,304 144,284" fill="none" stroke="#12397a" stroke-width="4" /><rect x="174" y="284" width="320" height="18" fill="#dde2ea" rx="8" /><rect x="110" y="348" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="120,370 128,380 144,360" fill="none" stroke="#12397a" stroke-width="4" /><rect x="174" y="360" width="250" height="18" fill="#dde2ea" rx="8" /><rect x="110" y="424" width="44" height="44" fill="#dfe8f7" rx="8" /><rect x="174" y="436" width="320" height="18" fill="#dde2ea" rx="8" /></svg></div>
+        <h3>Report on site</h3><p>Systems, observations and defects recorded on your phone during the walk-through.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_onsite">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="70" width="660" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="110" y="138" font-size="32" fill="#0a1524" font-weight="600">Photos in place</text><text x="110" y="192" font-size="28" fill="#566174">Photos</text><rect x="120" y="246" width="250" height="230" fill="#dfe8f7" rx="12" stroke="#dde2ea" stroke-width="3" /><rect x="148" y="300" width="180" height="16" fill="#ffffff" rx="8" /><rect x="148" y="334" width="130" height="16" fill="#b9c3d2" rx="8" /><rect x="148" y="368" width="160" height="16" fill="#dde2ea" rx="8" /><rect x="420" y="246" width="250" height="230" fill="#dfe8f7" rx="12" stroke="#dde2ea" stroke-width="3" /><rect x="448" y="300" width="180" height="16" fill="#ffffff" rx="8" /><rect x="448" y="334" width="130" height="16" fill="#b9c3d2" rx="8" /><rect x="448" y="368" width="160" height="16" fill="#dde2ea" rx="8" /><circle cx="620" cy="286" r="16" fill="#12397a" /></svg></div>
+        <h3>Photos in place</h3><p>Photos attached to the defect they show, with notes on each.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_photos">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="70" width="660" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="110" y="138" font-size="32" fill="#0a1524" font-weight="600">Safety issues</text><text x="110" y="196" font-size="28" fill="#566174">the buyer</text><circle cx="640" cy="128" r="34" fill="#dfe8f7" /><polyline points="624,128 634,142 656,112" fill="none" stroke="#12397a" stroke-width="4" /><rect x="110" y="250" width="400" height="22" fill="#dde2ea" rx="8" /><rect x="110" y="308" width="280" height="22" fill="#b9c3d2" rx="8" /><rect x="110" y="366" width="340" height="22" fill="#dde2ea" rx="8" /><rect x="110" y="424" width="220" height="22" fill="#b9c3d2" rx="8" /></svg></div>
+        <h3>Summary for the buyer</h3><p>Safety issues and repairs pulled into a clear summary at the top.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_summary">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="110" width="250" height="380" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><rect x="490" y="110" width="250" height="380" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><text x="80" y="168" font-size="26" fill="#0a1524" font-weight="600">PDF</text><text x="510" y="168" font-size="26" fill="#0a1524" font-weight="600">the agent</text><rect x="330" y="286" width="110" height="14" fill="#12397a" rx="4" /><polygon points="440,272 486,293 440,314" fill="#12397a" /><rect x="80" y="230" width="180" height="16" fill="#dde2ea" rx="8" /><rect x="80" y="270" width="130" height="16" fill="#b9c3d2" rx="8" /><rect x="80" y="360" width="160" height="16" fill="#dde2ea" rx="8" /><rect x="510" y="230" width="180" height="16" fill="#dde2ea" rx="8" /><rect x="510" y="270" width="130" height="16" fill="#b9c3d2" rx="8" /><rect x="510" y="360" width="160" height="16" fill="#dde2ea" rx="8" /></svg></div>
+        <h3>Same-day delivery</h3><p>The finished report sent as a link and a PDF to the client and the agent.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_delivery">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Solo inspector, three inspections on Saturday. At a 1980s ranch house he records the roof, the electrical panel, plumbing and HVAC as he walks, marks a double-tapped breaker and an aging water heater with photos, and at 6pm the buyer and the agent get the report with the summary of repairs at the top.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Solo inspector, three inspections on Saturday. At a 1980s ranch house he records the roof, the electrical panel, plumbing and HVAC as he walks, marks a double-tapped breaker and an aging water heater with photos, and at 6pm the buyer and the agent get the report with the summary of repairs at the top.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="180" y1="150" x2="1020" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><rect x="90" y="180" width="300" height="60" fill="#ffffff" rx="12" stroke="#dde2ea" stroke-width="3" /><text x="240" y="218" font-size="30" fill="#0a1524" font-weight="600" text-anchor="middle">Saturday</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><rect x="450" y="180" width="300" height="60" fill="#ffffff" rx="12" stroke="#dde2ea" stroke-width="3" /><text x="600" y="218" font-size="30" fill="#0a1524" font-weight="600" text-anchor="middle">roof</text><circle cx="960" cy="150" r="22" fill="#12397a" stroke="#12397a" stroke-width="6" /><rect x="810" y="180" width="300" height="60" fill="#ffffff" rx="12" stroke="#dde2ea" stroke-width="3" /><text x="960" y="218" font-size="30" fill="#0a1524" font-weight="600" text-anchor="middle">6pm</text><rect x="120" y="290" width="960" height="430" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="170" y="370" font-size="36" fill="#0a1524" font-weight="600">the buyer</text><text x="170" y="440" font-size="30" fill="#566174">the agent</text><rect x="170" y="510" width="64" height="64" fill="#dfe8f7" rx="10" /><rect x="270" y="510" width="64" height="64" fill="#12397a" rx="10" /><rect x="370" y="510" width="64" height="64" fill="#dfe8f7" rx="10" /><rect x="470" y="510" width="64" height="64" fill="#dfe8f7" rx="10" /><rect x="570" y="510" width="64" height="64" fill="#12397a" rx="10" /><rect x="670" y="510" width="64" height="64" fill="#dfe8f7" rx="10" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>A solo home inspector spends two or three hours in a house and then often as long again at the desk, turning notes and hundreds of photos into a report. The buyer and the agent want it quickly, because the inspection contingency is running, and the evening is when the report actually gets written.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>A solo home inspector spends two or three hours in a house and then often as long again at the desk, turning notes and hundreds of photos into a report. The buyer and the agent want it quickly, because the inspection contingency is running, and the evening is when the report actually gets written.</p>
     <p>Many inspectors still use templates in a word processor or a desktop program that does not travel well. Notes are taken on paper or in a phone memo, photos are matched to defects by hand afterwards, and the summary of the most important findings is retyped from the body of the report.</p>
     <p>The service lets you write the report while you inspect. You open the inspection on your phone and go through the house system by system: roof, exterior, structure, electrical, plumbing, heating and cooling, interior and the rest of your usual sections. For each item you record what you saw, choosing from your own comments or typing new ones.</p>
     <p>Photos are taken inside the report, so each one is attached to the defect it shows, with a short note. There is no sorting afterwards: when you finish the walk-through, the photos are already where they belong.</p>
@@ -114,31 +148,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Getting started takes one evening: your business details, your report sections and the comments you already use, which can be imported from your current template. The next inspection can be written in the service.</p>
     <p>Some states have their own report forms or required sections; the service lets you match your sections to them, and you remain responsible for meeting your state's standards of practice.</p>
     <p>The service is built for solo home inspectors and small inspection businesses. It is in preparation: we are checking whether inspectors need it before it is built.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Can I write the report on site?</h3>
-    <p>Yes, on your phone during the walk-through, system by system, with photos attached to each defect.</p>
-    <h3>Is there a summary of the main findings?</h3>
-    <p>Yes, safety issues and repairs are pulled into a summary at the top of the report.</p>
-    <h3>How is the report delivered?</h3>
-    <p>As a link and a PDF to your client and the agent.</p>
-    <h3>Can I use my own comments and sections?</h3>
-    <p>Yes, your comment library and sections can be imported from your current template.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether inspectors need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Can I write the report on site?</h3><p>Yes, on your phone during the walk-through, system by system, with photos attached to each defect.</p></div>
+      <div class="split flip"><h3>Is there a summary of the main findings?</h3><p>Yes, safety issues and repairs are pulled into a summary at the top of the report.</p></div>
+      <div class="split flip"><h3>How is the report delivered?</h3><p>As a link and a PDF to your client and the agent.</p></div>
+      <div class="split flip"><h3>Can I use my own comments and sections?</h3><p>Yes, your comment library and sections can be imported from your current template.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether inspectors need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Set up your report</h2>
-    <p><label>Inspections per month<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 10</option><option>10–30</option><option>30–60</option><option>More than 60</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Set up your report</h2>
+    </div>
+    <div class="tile stack">
+      <label>Inspections per month<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 10</option><option>10–30</option><option>30–60</option><option>More than 60</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Solo Inspector</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Report writing software for your business. The inspector remains responsible for the inspection and their state's standards of practice.</p>
+  <p>Report writing software for your business. The inspector remains responsible for the inspection and their state's standards of practice.</p>
 </div></footer>
 
 </body>
